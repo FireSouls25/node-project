@@ -1,10 +1,18 @@
-¡Perfecto! Aquí te dejo un **README.md** completo, limpio y profesional, para que lo dejes en tu repositorio de GitHub con todo lo que lograste:
+#Trabajo de Calidad
 
 ---
 
 ```markdown
-David Enmanuel Castillo Florez
-Deisy Andrea Martinez Bravo
+En este repositorio se encuentra implementada una funcion extra de Ficha Tecnica
+
+-David Enmanuel Castillo Florez
+-Deisy Andrea Martinez Bravo
+
+Cuarto Semestre
+
+Calidad de Software
+
+Universidad Cooperativa de Colombia
 
 # 🟢 Proyecto de Manejo de Promesas + Integración Continua
 
