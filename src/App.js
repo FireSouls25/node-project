@@ -4,6 +4,8 @@ import SearchForm from './components/SearchForm';
 import './App.css';
 import axios from 'axios';
 import VisualizarTiempos from './components/VisualizarTiempos';
+import FichaPersonal from './components/FichaPersonal'; 
+import './components/FichaPersonal.css'; 
 
 function App() {
   const [timeAxios, setTimeAxios] = useState(parseFloat(localStorage.getItem('axiosTime') ?? 0));
@@ -13,6 +15,7 @@ function App() {
   const [country, setCountry] = useState('US');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingType, setLoadingType] = useState('');
+  const [mostrarFicha, setMostrarFicha] = useState(false); 
 
   const url = `https://randomuser.me/api/?results=12&gender=${gender}&nat=${country}`;
 
@@ -102,7 +105,13 @@ function App() {
         <button onClick={compareRequests} disabled={isLoading} className="btn">
           {isLoading && loadingType === 'compare' ? "Cargando..." : "Comparar Axios vs Fetch"}
         </button>
+        <button onClick={() => setMostrarFicha(prev => !prev)} disabled={isLoading} className="btn">
+          {mostrarFicha ? "Ocultar Ficha Personal" : "Ficha Personal"}
+        </button>
       </div>
+
+      {mostrarFicha && <FichaPersonal />}
+
       <VisualizarTiempos timeAxios={timeAxios} timeFetch={timeFetch} />
       <div className="App-results">
         <div className="result-section">
