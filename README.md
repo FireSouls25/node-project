@@ -3,6 +3,9 @@
 ---
 
 ```markdown
+David Enmanuel Castillo Florez
+Deisy Andrea Martinez Bravo
+
 # 🟢 Proyecto de Manejo de Promesas + Integración Continua
 
 Este proyecto consiste en una aplicación React sencilla que consume la API pública de usuarios aleatorios [Random User API](https://randomuser.me/api/) y muestra información básica de los usuarios.
