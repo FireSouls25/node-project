@@ -1,4 +1,4 @@
-#Trabajo de Calidad
+Trabajo de Calidad
 
 ---
 
